@@ -1,0 +1,106 @@
+<%- include("../layout", {
+  title: "Home",
+  body: `
+  <div class="category-nav">
+    <button class="active"><a href="#">ALL</a></button>
+    <button><a href="#">GRAPHIC DESIGN</a></button>
+    <button><a href="#">COMMISSION DRAWING</a></button>
+    <button><a href="#">DIGITAL ART</a></button>
+    <button><a href="#">VIDEO EDITING</a></button>
+    <button><a href="#">PHOTO MANIPULATION</a></button>
+  </div>
+
+  <!-- GALLERY FLEX -->
+  <div class="gallery-flex">
+    <!-- CARD -->
+     <div class="art-card">
+      <img src="/images/art_sample_1.jpg" alt="">
+      <div class="overlay">
+
+        <div class="art-actions">
+          <button class="icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="icon-btn"><i class="fa fa-comment"></i></button>
+          <button class="icon-btn"><i class="fa fa-star"></i></button>
+        </div>
+
+        <div class="art-info">
+          <h3 class="art-title">Starry Night</h3>
+          <p class="artist">Vincent Van Gogh</p>
+          <div class="price-and-pay">
+            <p class="art-price">$200,000,000</p>
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+
+      </div>
+     </div>
+
+      <div class="art-card">
+        <img src="/images/art_sample_2.jpg" alt="">
+      <div class="overlay">
+
+        <div class="art-actions">
+          <button class="icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="icon-btn"><i class="fa fa-comment"></i></button>
+          <button class="icon-btn"><i class="fa fa-star"></i></button>
+        </div>
+
+        <div class="art-info">
+          <h3 class="art-title">Mona Lisa</h3>
+          <p class="artist">Leonardo Da Vinci</p>
+          <div class="price-and-pay">
+            <p class="art-price">$200,000,000</p>
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+
+      </div>
+     </div>
+
+     <!-- CARD -->
+     <div class="art-card">
+      <img src="/images/art_sample_3.jpg" alt="">
+      <div class="overlay">
+
+        <div class="art-actions">
+          <button class="icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="icon-btn"><i class="fa fa-comment"></i></button>
+          <button class="icon-btn"><i class="fa fa-star"></i></button>
+        </div>
+
+        <div class="art-info">
+          <h3 class="art-title">San Giorgio Maggiore at Dusk</h3>
+          <p class="artist">Claude Monet</p>
+          <div class="price-and-pay">
+            <p class="art-price">$200,000,000</p>
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+
+      </div>
+     </div>
+
+      <div class="art-card">
+        <img src="/images/art_sample_4.jpg" alt="">
+      <div class="overlay">
+
+        <div class="art-actions">
+          <button class="icon-btn"><i class="fa fa-heart"></i></button>
+          <button class="icon-btn"><i class="fa fa-comment"></i></button>
+          <button class="icon-btn"><i class="fa fa-star"></i></button>
+        </div>
+
+        <div class="art-info">
+          <h3 class="art-title">Le Rêve</h3>
+          <p class="artist">Pablo Picaso</p>
+          <div class="price-and-pay">
+            <p class="art-price">$200,000,000</p>
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+
+      </div>
+     </div>
+  </div>
+  `
+}) %>
