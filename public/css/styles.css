@@ -403,7 +403,7 @@ body {
 }
 
 .art-info {
-  transform: translateY(20px);
+  transform: translateX(100%);
   opacity: 0;
   transition: transform 0.25s ease, opacity 0.25s ease;
   width: 100%;
@@ -411,10 +411,14 @@ body {
   padding-left: 20px;
 }
 
-/* Slide up smoothly on hover */
+/* Slide in from right on hover */
 .art-card:hover .art-info {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
+}
+
+.art-card:hover .art-actions {
+  transform: translateY(0);
 }
 
 .overlay h3 {
@@ -435,11 +439,13 @@ body {
   position: absolute;
   top: 50%;
   right: 10px;
-  transform: translateY(-50%);
+  opacity: 0;
+  transform: translate(50%, -50%); /* start off to the right */
   display: flex;
   flex-direction: column;
   gap: 24px;
   z-index: 2;
+  transition: transform 0.4s ease, opacity 0.4s ease; /* smooth slide + fade */
 }
 
 .art-info .artist {
@@ -477,4 +483,9 @@ body {
 .icon-btn:hover {
   color: #ff4e00;
   transform: scale(1.2);
+}
+
+.art-card:hover .art-actions {
+  transform: translate(0, -50%); /* slide into place */
+  opacity: 1; /* fade in */
 }

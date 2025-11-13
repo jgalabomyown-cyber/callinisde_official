@@ -1,6 +1,2 @@
-- [x] Adjust .gallery-grid: add margin-left: 100px; margin-right: 100px; width: calc(100vw - 200px);
-- [x] Add styles for .art-card: height: 300px; position: relative;
-- [x] Hide .art-card-info by default: opacity: 0;
-- [x] Show .art-card-info on hover: .art-card:hover .art-card-info { opacity: 1; }
-- [x] Center .art-title: text-align: center;
-- [x] Position .go-btn absolutely: position: absolute; bottom: 10px; right: 10px;
+- [x] Add smooth slide-to-right animation to .art-actions on hover in public/css/styles.css
+- [x] Change .art-info animation from bottom-to-top to right-to-left slide on hover
